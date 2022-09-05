@@ -1,15 +1,21 @@
 /* IMPOSTAZIONI GENERALI */
-html {font-size: 62.5%;}
-body { 
-    font-family: Poppins, 'Helvetica Neue', sans-serif;
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Poppins, "Helvetica Neue", sans-serif;
     font-size: 1.4rem;
     line-height: 1.5;
     padding: 15px;
-    background-image: url('../img/sfondo.png');
+    background-image: url("../img/sfondo.png");
     background-position: center center;
 }
-* {box-sizing: border-box;}
-hr {display: none;} /* rimuove l'elemento */
+* {
+    box-sizing: border-box;
+}
+hr {
+    display: none;
+} /* rimuove l'elemento */
 
 /* BUTTON FIXED */
 .toTop {
@@ -22,22 +28,28 @@ hr {display: none;} /* rimuove l'elemento */
     bottom: 20vh;
     right: -7px;
 }
-.toTop a, .social a {
+.toTop a,
+.social a {
     color: #c77ea2;
     font-size: 4rem;
     display: block;
 }
-    .social a {
-        color: rgb(45, 101, 185);
-    }
-.toTop .far, .social .far {
+.social a {
+    color: rgb(45, 101, 185);
+}
+.toTop .far,
+.social .far {
     background: white;
 }
 
 /* HEADER */
 header {
-    background: rgb(0,160,198);
-    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    background: rgb(0, 160, 198);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 160, 198, 1) 0%,
+        rgba(3, 109, 134, 1) 68%
+    );
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -60,9 +72,9 @@ header nav li {
     display: inline-block;
     margin-right: 10px;
 }
-    header nav li:last-child {
-        margin-right: 0;
-    }
+header nav li:last-child {
+    margin-right: 0;
+}
 header nav li a {
     color: white;
     text-decoration: none;
@@ -79,9 +91,9 @@ main {
     background-color: #fff;
     box-shadow: 0 3px 3px #444;
     padding: 2em 1em;
-    margin-bottom:1.5em ;
+    margin-bottom: 1.5em;
 }
-section { 
+section {
     background-color: #e3e3e3;
     padding: 2.5em 1em 1em;
     margin-bottom: 2em;
@@ -100,7 +112,6 @@ section h2 {
     left: 5%;
     padding: 0 1em;
     box-shadow: 1px 1px 2px #333;
-
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -110,7 +121,12 @@ h1 {
     letter-spacing: -0.03em;
     margin-bottom: 0.7em;
 }
-p, address, ul, ol, dl, blockquote {
+p,
+address,
+ul,
+ol,
+dl,
+blockquote {
     margin-bottom: 1.2em;
 }
 h1 + p {
@@ -119,7 +135,7 @@ h1 + p {
 .imgLeft {
     float: left;
     margin-right: 20px;
-    border: 4px solid #00A0C6;
+    border: 4px solid #00a0c6;
     outline: 4px solid #a02571;
     padding: 3px;
 }
@@ -127,12 +143,13 @@ h1 + p {
     content: "";
     clear: both;
     display: table;
-  }
-ul, ol {
+}
+ul,
+ol {
     margin-left: 2em;
 }
 a {
-    color: #00A0C6;
+    color: #00a0c6;
     font-weight: bold;
 }
 strong {
@@ -163,7 +180,8 @@ thead tr {
     background-color: #3f6bca;
     color: #ffffff;
 }
-th, td {
+th,
+td {
     padding: 12px 15px;
     vertical-align: bottom;
     text-align: center;
@@ -215,11 +233,14 @@ aside div p:last-child {
     text-align: right;
 }
 
-
 /* FOOTER */
 footer {
-    background: rgb(53,53,53);
-    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    background: rgb(53, 53, 53);
+    background: linear-gradient(
+        0deg,
+        rgba(53, 53, 53, 1) 0%,
+        rgba(5, 85, 103, 1) 68%
+    );
     box-shadow: 0 3px 3px #444;
     color: #f0f0f0;
     padding: 1em;
@@ -230,96 +251,115 @@ footer a {
     color: fuchsia;
 }
 
-
-
-@media screen and (max-width:479px) {
-
-    header{
-     padding: 1em 1em;
-     line-height: 70%;
-     margin-bottom:0.7em ;
-     font-size: 1rem;            
-    }
-    main {
-        margin-bottom:0.7em ;
+@media only screen and (min-width: 600px) {
+    header {
+        line-height: 1rem;
     }
 
-    header img{
-        width: 160px;
-        margin-bottom: 10px;
-
-    }
-   
-    #top p,nav{
-        font-size: 1.6rem;
+    header img {
+        width: 300px;
+        height: auto;
     }
 
-    article{
-        align-content: center;
-    }    
-
-   table{
-        margin-left: auto;
-        margin-right: auto;
-   }
-    
-   .fas{
-    font-size: 0.7rem;
-   }
-    
-
-   
+    iframe {
+        height: 40vh;
+    }
 }
 
-    
-
-
-
-@media screen and (min-width:480px) {
-    header{
-        display: flex;
-        justify-content: space-between;
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.6rem;
+        line-height: 1.7;
     }
-
-    iframe{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+    header {
         height: 30vh;
     }
+    header div {
+        display: inline-block;
+        float: left;
+    }
 
-       
-}
+    header div img {
+        width: 240px;
+        height: auto;
+        margin-bottom: 10%;
+        padding: 0%;
+    }
+    header div p {
+        margin-bottom: 0px;
+    }
 
+    header nav {
+        float: right;
+    }
 
+    main {
+        padding: 2.5em 2em;
+    }
 
-
-@media screen and (min-width:768px) {
-   
-    iframe{
-        width: 70%;
+    table {
         margin-left: auto;
         margin-right: auto;
+        width: 90vh;
+    }
+
+    #video--box {
+        display: block;
+        justify-content: space-around;
+    }
+    iframe {
+        width: 48%;
+        float: left;
         height: 40vh;
+    }
+
+    #novita {
+        float: right;
+        width: 48%;
+        margin: 0%;
+        height: 40vh;
+        border-radius: 20px;
+        text-align: center;
+        padding: 5%;
+    }
+
+    aside {
+        display: inline;
+        justify-content: space-between;
+        vertical-align: middle;
+        align-items: center;
+    }
+
+    aside div {
+        display: inline-block;
+        justify-content: center;
+        width: 28%;
+        height: 30vh;
+        margin-inline: 1px;
     }
 }
 
-
-
-@media screen and (min-width:1024px) {
-
-    iframe{
-        max-width: 720px;
-        margin-left: auto;
-        margin-right: auto;
-        height: 40vh;
+@media only screen and (min-width: 1200px) {
+    header {
+        height: 25vh;
     }
 
+    main {
+        margin-bottom: 0%;
+    }
+    iframe {
+        height: 50vh;
+    }
 
+    #novita {
+        height: 50vh;
+    }
 
+    form {
+        margin-top: 60px;
+    }
 
-}
-@media screen and (max-width:1200px) {
-
-
+    form input {
+        width: 60%;
+    }
 }
